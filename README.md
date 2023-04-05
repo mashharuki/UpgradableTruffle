@@ -179,6 +179,25 @@ Summary
 > Final cost:          0.00425334 ETH
 ```
 
+- テスト
+
+```bash
+npm run test
+```
+
+```bash
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+  upgrades
+    ✔ upgrades test (211ms)
+
+
+  1 passing (214ms)
+
+```
+
 ## デプロイしたコントラクト
 
 1. [LogicV1](https://testnet.bscscan.com/address/0x10545794Ac5b7F3d38F2C895F4d37eF8746E52e1)
