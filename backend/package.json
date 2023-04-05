@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx truffle test",
+    "compile": "npx truffle compile",
+    "deploy": "npx truffle migrate --f 1 --to 1",
+    "upgrade": "npx truffle migrate --f 2 --to 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.8.2",
+    "truffle": "^5.8.1"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.17.1"
+  }
+}
