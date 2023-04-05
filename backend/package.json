@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npx truffle test",
     "compile": "npx truffle compile",
-    "deploy": "npx truffle migrate --f 1 --to 1",
-    "upgrade": "npx truffle migrate --f 2 --to 2"
+    "deploy:bsctest": "npx truffle migrate --f 1 --to 1 --network bsctest",
+    "upgrade:bsctest": "npx truffle migrate --f 2 --to 2 --network bsctest"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,8 @@
     "truffle": "^5.8.1"
   },
   "devDependencies": {
-    "@openzeppelin/truffle-upgrades": "^1.17.1"
+    "@openzeppelin/truffle-upgrades": "^1.17.1",
+    "@truffle/hdwallet-provider": "^2.1.9",
+    "dotenv": "^16.0.3"
   }
 }

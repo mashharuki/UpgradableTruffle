@@ -1,0 +1,99 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xF12b5dd4EAD5F743C6BaA640B0216200e89B60Da",
+    "txHash": "0x7ff51cd3b32738883a84a0468f19bcf808d5b4d746cda649778f5581607eb7d6"
+  },
+  "proxies": [
+    {
+      "address": "0x345cA3e014Aaf5dcA488057592ee47305D9B3e10",
+      "txHash": "0x2002ef337b548cfed3aa403394a70f98440670a3c6f902cd660373db90f4c590",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xf25186B5081Ff5cE73482AD761DB0eB0d25abfBF",
+      "txHash": "0x1f352dda72404fc171b745a9dce93dcb42d4b1ead714906bb4d729576590a1a0",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "6d48e57660995ddedb2fcc31601a38994a016f086b601faa6af606e165e322a2": {
+      "address": "0x8CdaF0CD259887258Bc13a92C0a6dA92698644C0",
+      "txHash": "0xc1a6703021fa27c556e6a090eba7d31e9f5ac66df5e6a93bd138d60854edef0e",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "LogicV1",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "../project:/contracts/LogicV1.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "45c52c267959a200a185dc04423295df68fe7a6f315291b2fc5617dacfe71390": {
+      "address": "0x8f0483125FCb9aaAEFA9209D8E9d7b9C8B9Fb90F",
+      "txHash": "0xd6f14fb8ab31adb954d60ebc82e04e2081eaee00803282a0f52086d24d3839f5",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "LogicV2",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "../project:/contracts/LogicV2.sol:9"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

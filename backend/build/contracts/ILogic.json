@@ -67,7 +67,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.10;\n\ninterface ILogic {\n    function initialize(uint256 _value) external;\n\n    function setValue(uint256 _a, uint256 _b) external returns (uint256);\n\n    function getRandomNumber(uint256 _num) external view returns (uint256);\n}",
-  "sourcePath": "/workspace/UpgradableTruffle/backend/contracts/interfaces/ILogic.sol",
+  "sourcePath": "/Users/harukikondo/git/UpgradableTruffle/backend/contracts/interfaces/ILogic.sol",
   "ast": {
     "absolutePath": "project:/contracts/interfaces/ILogic.sol",
     "exportedSymbols": {
@@ -367,7 +367,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-05T09:37:07.720Z",
+  "updatedAt": "2023-04-05T09:58:26.456Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

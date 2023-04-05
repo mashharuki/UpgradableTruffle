@@ -25,7 +25,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -81,7 +82,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"version\",\"type\":\"uint8\"}],\"name\":\"Initialized\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"seed\",\"type\":\"uint256\"}],\"name\":\"getRandomNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"setValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"value\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LogicV1.sol\":\"LogicV1\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"keccak256\":\"0x037c334add4b033ad3493038c25be1682d78c00992e1acb0e2795caff3925271\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8a313cf42389440e2706837c91370323b85971c06afd6d056d21e2bc86459618\",\"dweb:/ipfs/QmT8XUrUvQ9aZaPKrqgRU2JVGWnaxBcUYJA7Q7K5KcLBSZ\"]},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"keccak256\":\"0x2edcb41c121abc510932e8d83ff8b82cf9cdde35e7c297622f5c29ef0af25183\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://72460c66cd1c3b1c11b863e0d8df0a1c56f37743019e468dc312c754f43e3b06\",\"dweb:/ipfs/QmPExYKiNb9PUsgktQBupPaM33kzDHxaYoVeJdLhv8s879\"]},\"project:/contracts/LogicV1.sol\":{\"keccak256\":\"0x52d7d61b016641a0bb09745b5e25ad364cea6ce6222261f00305b9ce3890f500\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8227b964e1db8d5f3bc13ad3c8a61c839f8e40bb5f45c6ee57eba626d8cb0d22\",\"dweb:/ipfs/QmWeX6Z3EmQiRwW8BjHuCVEt9Y7aSp7BrmuhD1xmSGnaxM\"]},\"project:/contracts/interfaces/ILogic.sol\":{\"keccak256\":\"0xc6f5d96ecf89cfd0a14f66793d59402b3b1c0d98f1ee46daf16ca4cff97cf868\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f63f6a74f624424f32d8e0253e9554748e37618e032dfc094a1eab8725e4d545\",\"dweb:/ipfs/QmZLB7wVZZvMm4a3HdqMY6X6k2WP4YWTYX9GKvzoocJCxL\"]}},\"version\":1}",
@@ -2473,7 +2475,7 @@
   "sourceMap": "169:485:2:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "169:485:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;217:20;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;345:140;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;491:161;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;244:95;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;217:20;;;;:::o;345:140::-;417:7;453:3;444:6;:12;;;;:::i;:::-;436:5;:20;;;;473:5;;466:12;;345:140;;;;:::o;491:161::-;560:7;621:15;638:4;604:39;;;;;;;;;:::i;:::-;;;;;;;;;;;;;594:50;;;;;;586:59;;579:66;;491:161;;;:::o;244:95::-;3268:19:0;3291:13;;;;;;;;;;;3290:14;3268:36;;3336:14;:34;;;;;3369:1;3354:12;;;;;;;;;;:16;;;3336:34;3335:108;;;;3377:44;3415:4;3377:29;:44::i;:::-;3376:45;:66;;;;;3441:1;3425:12;;;;;;;;;;:17;;;3376:66;3335:108;3314:201;;;;;;;;;;;;:::i;:::-;;;;;;;;;3540:1;3525:12;;:16;;;;;;;;;;;;;;;;;;3555:14;3551:65;;;3601:4;3585:13;;:20;;;;;;;;;;;;;;;;;;3551:65;326:6:2::1;318:5;:14;;;;3640::0::0;3636:99;;;3686:5;3670:13;;:21;;;;;;;;;;;;;;;;;;3710:14;3722:1;3710:14;;;;;;:::i;:::-;;;;;;;;3636:99;3258:483;244:95:2;:::o;1186:320:1:-;1246:4;1498:1;1476:7;:19;;;:23;1469:30;;1186:320;;;:::o;7:77:5:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;523:117::-;632:1;629;622:12;769:122;842:24;860:5;842:24;:::i;:::-;835:5;832:35;822:63;;881:1;878;871:12;822:63;769:122;:::o;897:139::-;943:5;981:6;968:20;959:29;;997:33;1024:5;997:33;:::i;:::-;897:139;;;;:::o;1042:474::-;1110:6;1118;1167:2;1155:9;1146:7;1142:23;1138:32;1135:119;;;1173:79;;:::i;:::-;1135:119;1293:1;1318:53;1363:7;1354:6;1343:9;1339:22;1318:53;:::i;:::-;1308:63;;1264:117;1420:2;1446:53;1491:7;1482:6;1471:9;1467:22;1446:53;:::i;:::-;1436:63;;1391:118;1042:474;;;;;:::o;1522:329::-;1581:6;1630:2;1618:9;1609:7;1605:23;1601:32;1598:119;;;1636:79;;:::i;:::-;1598:119;1756:1;1781:53;1826:7;1817:6;1806:9;1802:22;1781:53;:::i;:::-;1771:63;;1727:117;1522:329;;;;:::o;1857:180::-;1905:77;1902:1;1895:88;2002:4;1999:1;1992:15;2026:4;2023:1;2016:15;2043:305;2083:3;2102:20;2120:1;2102:20;:::i;:::-;2097:25;;2136:20;2154:1;2136:20;:::i;:::-;2131:25;;2290:1;2222:66;2218:74;2215:1;2212:81;2209:107;;;2296:18;;:::i;:::-;2209:107;2340:1;2337;2333:9;2326:16;;2043:305;;;;:::o;2354:79::-;2393:7;2422:5;2411:16;;2354:79;;;:::o;2439:157::-;2544:45;2564:24;2582:5;2564:24;:::i;:::-;2544:45;:::i;:::-;2539:3;2532:58;2439:157;;:::o;2602:397::-;2742:3;2757:75;2828:3;2819:6;2757:75;:::i;:::-;2857:2;2852:3;2848:12;2841:19;;2870:75;2941:3;2932:6;2870:75;:::i;:::-;2970:2;2965:3;2961:12;2954:19;;2990:3;2983:10;;2602:397;;;;;:::o;3005:169::-;3089:11;3123:6;3118:3;3111:19;3163:4;3158:3;3154:14;3139:29;;3005:169;;;;:::o;3180:233::-;3320:34;3316:1;3308:6;3304:14;3297:58;3389:16;3384:2;3376:6;3372:15;3365:41;3180:233;:::o;3419:366::-;3561:3;3582:67;3646:2;3641:3;3582:67;:::i;:::-;3575:74;;3658:93;3747:3;3658:93;:::i;:::-;3776:2;3771:3;3767:12;3760:19;;3419:366;;;:::o;3791:419::-;3957:4;3995:2;3984:9;3980:18;3972:26;;4044:9;4038:4;4034:20;4030:1;4019:9;4015:17;4008:47;4072:131;4198:4;4072:131;:::i;:::-;4064:139;;3791:419;;;:::o;4216:85::-;4261:7;4290:5;4279:16;;4216:85;;;:::o;4307:86::-;4342:7;4382:4;4375:5;4371:16;4360:27;;4307:86;;;:::o;4399:60::-;4427:3;4448:5;4441:12;;4399:60;;;:::o;4465:154::-;4521:9;4554:59;4570:42;4579:32;4605:5;4579:32;:::i;:::-;4570:42;:::i;:::-;4554:59;:::i;:::-;4541:72;;4465:154;;;:::o;4625:143::-;4718:43;4755:5;4718:43;:::i;:::-;4713:3;4706:56;4625:143;;:::o;4774:234::-;4873:4;4911:2;4900:9;4896:18;4888:26;;4924:77;4998:1;4987:9;4983:17;4974:6;4924:77;:::i;:::-;4774:234;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.10;\n\nimport \"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\";\nimport \"./interfaces/ILogic.sol\";\n\ncontract LogicV1 is Initializable, ILogic {\n    uint256 public value;\n\n    function initialize(uint256 _value) public override initializer {\n        value = _value;\n    }\n\n    function setValue(uint256 _value, uint256 num) public override returns (uint256) {\n        value = _value + num;\n        return value;\n    }\n\n    function getRandomNumber(uint256 seed) public view override returns (uint256) {\n        return uint256(keccak256(abi.encodePacked(block.timestamp, seed)));\n    }\n}",
-  "sourcePath": "/workspace/UpgradableTruffle/backend/contracts/LogicV1.sol",
+  "sourcePath": "/Users/harukikondo/git/UpgradableTruffle/backend/contracts/LogicV1.sol",
   "ast": {
     "absolutePath": "project:/contracts/LogicV1.sol",
     "exportedSymbols": {
@@ -3233,9 +3235,17 @@
     "name": "solc",
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "97": {
+      "events": {},
+      "links": {},
+      "address": "0x08FeD32A2043DbCFbb1CE9d9b62416B9095CaD13",
+      "transactionHash": "0x0ffade5344a49028a8b3366ea3d40ae04c901edf024e6fbd6c7ba74a34bfad01"
+    }
+  },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-05T09:37:07.717Z",
+  "updatedAt": "2023-04-05T10:00:16.638Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
