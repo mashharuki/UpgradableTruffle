@@ -6,8 +6,10 @@
   "scripts": {
     "test": "npx truffle test",
     "compile": "npx truffle compile",
-    "deploy:bsctest": "npx truffle migrate --f 1 --to 1 --network bsctest",
-    "upgrade:bsctest": "npx truffle migrate --f 2 --to 2 --network bsctest"
+    "deploy:bsctest": "npx truffle migrate --f 1 --to 1 --network bsctest",    
+    "upgrade:bsctest": "npx truffle migrate --f 2 --to 2 --network bsctest",
+    "deploy:sandverce": "npx truffle migrate --f 1 --to 1 --network sandverce",    
+    "upgrade:sandverce": "npx truffle migrate --f 2 --to 2 --network sandverce"
   },
   "keywords": [],
   "author": "",
