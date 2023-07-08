@@ -25,7 +25,6 @@ module.exports = {
     sandverce: {
       provider: () => new HDWalletProvider(HD_MNEMONIC, `https://rpc.sandverse.oasys.games`),
       network_id: 20197,
-      confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true
     },
