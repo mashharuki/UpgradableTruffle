@@ -28,6 +28,12 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
+    nostestnet: {
+      provider: () => new HDWalletProvider(HD_MNEMONIC, `https://node.l2.trustless.computer/`),
+      network_id: 42213,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
   },
   mocha: {
 

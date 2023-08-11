@@ -9,7 +9,9 @@
     "deploy:bsctest": "npx truffle migrate --f 1 --to 1 --network bsctest",    
     "upgrade:bsctest": "npx truffle migrate --f 2 --to 2 --network bsctest",
     "deploy:sandverce": "npx truffle migrate --f 1 --to 1 --network sandverce",    
-    "upgrade:sandverce": "npx truffle migrate --f 2 --to 2 --network sandverce"
+    "upgrade:sandverce": "npx truffle migrate --f 2 --to 2 --network sandverce",
+    "deploy:nostestnet": "npx truffle migrate --f 1 --to 1 --network nostestnet",    
+    "upgrade:nostestnet": "npx truffle migrate --f 2 --to 2 --network nostestnet"
   },
   "keywords": [],
   "author": "",

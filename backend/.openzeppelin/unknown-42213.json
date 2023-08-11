@@ -1,0 +1,94 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb",
+    "txHash": "0x44e76dcb0763379bb60bc9870204c2e01a2a7a1d29be7421a6fbd16714ec6c17"
+  },
+  "proxies": [
+    {
+      "address": "0xa05Db9C31B6ffB6aB817D346E99095e1c1c8317D",
+      "txHash": "0xaa90166a5fbe284ac0ec76dee36f5ec3928685977bdc5a22593f50551e5e0521",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "6d48e57660995ddedb2fcc31601a38994a016f086b601faa6af606e165e322a2": {
+      "address": "0xAa363921A48Eac63F802C57658CdEde768B3DAe1",
+      "txHash": "0x68fedf6fce1f1f5ab143f3b291e491c679f9092d8c2ae0d8286ebc986311b6e9",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../project:/contracts/interfaces/IDNS.sol:20",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../project:/contracts/interfaces/IDNS.sol:20"
+          },
+          {
+            "contract": "LogicV1",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "../project:/contracts/lib/Base64.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "45c52c267959a200a185dc04423295df68fe7a6f315291b2fc5617dacfe71390": {
+      "address": "0x8DF7e6234f76e8fAC829feF83E7520635359094C",
+      "txHash": "0x679aa7e50edc8c832b2098c2173d60180dd8835a6054927d6f365f1d77a5e5b4",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../project:/contracts/interfaces/IDNS.sol:20",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../project:/contracts/interfaces/IDNS.sol:20"
+          },
+          {
+            "contract": "LogicV2",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "../project:/contracts/LogicV2.sol:9"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

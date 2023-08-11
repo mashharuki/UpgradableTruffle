@@ -203,3 +203,9 @@ npm run test
 1. [LogicV1](https://testnet.bscscan.com/address/0x10545794Ac5b7F3d38F2C895F4d37eF8746E52e1)
 
 2. [LogicV2]()
+
+## デプロイしたコントラクト (NOS Testnet)
+
+1. [LogicV1](https://explorer.l2.trustless.computer/address/0xAa363921A48Eac63F802C57658CdEde768B3DAe1)
+
+2. [LogicV2](https://explorer.l2.trustless.computer/address/0xa05Db9C31B6ffB6aB817D346E99095e1c1c8317D)
